@@ -35,4 +35,16 @@ SELECT
 FROM 
     DailyAverages
 WHERE
-    avg_sea_surface_temp IS NOT NULL
+    avg_wind_direction_true IS NOT NULL
+    AND avg_wind_speed IS NOT NULL
+    AND avg_visibility IS NOT NULL
+    AND avg_present_weather IS NOT NULL
+    AND avg_past_weather IS NOT NULL
+    AND avg_sea_level_pressure IS NOT NULL
+    AND avg_air_temperature IS NOT NULL
+    AND avg_wetbulb_temperature IS NOT NULL
+    AND avg_dewpoint_temperature IS NOT NULL
+    AND avg_total_cloud_amount IS NOT NULL
+    AND avg_sea_surface_temp IS NOT NULL
+
+ORDER BY year, month, day DESC
